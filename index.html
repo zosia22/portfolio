@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zofia Rogozińska | UX/UI Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header & Nav -->
+        <header>
+            <div class="nav-container">
+                <a href="#" class="logo">Zofia Rogozińska</a>
+                <nav>
+                    <ul>
+                        <li><a href="#case-studies">Projects</a></li>
+                        <li><a href="mailto:zofia.rogozinska22@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Intro Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Cognitive Science graduate and aspiring UX/UI Designer</h1>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300;">With a strong foundation in user psychology, eye-tracking research, and visual search efficiency. Fascinated by how cognitive processes shape digital experiences, I aim to combine data-driven research with creative prototyping to design intuitive, user-friendly interfaces. Currently in Poznań, relocating to Porto, Portugal.</p>
+                
+                <div class="hero-contact">
+                    <a href="mailto:zofia.rogozinska22@gmail.com">zofia.rogozinska22@gmail.com</a>
+                    <a href="tel:+48606505115">+48 606 505 115</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid (Matches the wireframe wire layout) -->
+        <section id="case-studies" class="projects-section">
+            <div class="grid">
+                
+                <!-- Project 1: Erasmus+ App -->
+                <div class="project-card open-modal" data-modal="modal-erasmus">
+                    <div class="project-image-box">
+                        <img src="erasmus_preview.png" alt="Erasmus+ Mobile App wireframe mockup">
+                    </div>
+                    <h3>Erasmus+ Mobile App</h3>
+                    <p>Conceptual mobile app designed to centralize and simplify discovery and filtering of Erasmus+ Projects opportunities.</p>
+                    <div class="project-tags">
+                        <span>Low-Fidelity Prototyping</span>
+                        <span>User Surveys</span>
+                        <span>MVP Strategy</span>
+                        <span>Product Roadmap</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Allegro Usability -->
+                <div class="project-card open-modal" data-modal="modal-allegro">
+                    <div class="project-image-box">
+                        <img src="allegro_preview.png" alt="Allegro Usability Study logo preview">
+                    </div>
+                    <h3>Allegro Usability Project</h3>
+                    <p>Academic collaboration evaluating layout navigation and prototyping optimizations for Poland's biggest e-commerce platform.</p>
+                    <div class="project-tags">
+                        <span>Usability Testing</span>
+                        <span>UX Research</span>
+                        <span>Qualitative Analysis</span>
+                        <span>Figma Redesign</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Eye-Tracking Thesis -->
+                <div class="project-card open-modal" data-modal="modal-eyetracking">
+                    <div class="project-image-box">
+                        <img src="eyetracking_preview.png" alt="Eye-Tracking Experiments stimuli diagram">
+                    </div>
+                    <h3>Eye-Tracking Study</h3>
+                    <p>Master's thesis: "The Influence of Cognitive Styles on Visual Search Efficiency in Eastern and Western Interface Designs".</p>
+                    <div class="project-tags">
+                        <span>Eye-Tracking</span>
+                        <span>Quantitative Research</span>
+                        <span>Cognitive Psychology</span>
+                        <span>Visual Search Efficiency</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Paintings Gallery -->
+                <div class="project-card open-modal" data-modal="modal-paintings">
+                    <div class="project-image-box">
+                        <img src="paintings_preview.png" alt="Zofia Rogozińska paintings gallery preview">
+                    </div>
+                    <h3>Paintings</h3>
+                    <p>Original acrylic paintings showcasing a personal exploration of analog color, composition, and visual expression.</p>
+                    <div class="project-tags">
+                        <span>Color Theory</span>
+                        <span>Visual Composition</span>
+                        <span>Acrylic Painting</span>
+                        <span>Fine Art</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Beyond Design</h2>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300;">I actively participate in international projects, exploring new cultures and continuously developing myself. I express my energy and creativity by dancing, lifting weights at the gym, doing yoga, painting with acrylics, and doing other hand crafts. I also find balance and recharge by spending time in nature.</p>
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zofia Rogozińska. UX/UI Portfolio.</p>
+        </div>
+    </footer>
+    <!-- MODAL 1: Erasmus+ App Details (Interactive Slideshow) -->
+    <div id="modal-erasmus" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content slideshow-modal-content">
+            <div class="slideshow-container">
+                <div class="slides-track">
+                    <div class="slide"><img src="erasmus_slides/1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="erasmus_slides/2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="erasmus_slides/3.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="erasmus_slides/4.jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="erasmus_slides/5.jpg" alt="Slide 5"></div>
+                    <div class="slide"><img src="erasmus_slides/6.jpg" alt="Slide 6"></div>
+                    <div class="slide">
+                        <video controls playsinline preload="auto" muted>
+                            <source src="erasmus_prototype.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="slide"><img src="erasmus_slides/8.jpg" alt="Slide 8"></div>
+                    <div class="slide"><img src="erasmus_slides/9.jpg" alt="Slide 9"></div>
+                    <div class="slide"><img src="erasmus_slides/10.jpg" alt="Slide 10"></div>
+                    <div class="slide"><img src="erasmus_slides/11.jpg" alt="Slide 11"></div>
+                    <div class="slide"><img src="erasmus_slides/12.jpg" alt="Slide 12"></div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="slide-nav prev-btn">&larr;</button>
+                <button class="slide-nav next-btn">&rarr;</button>
+            </div>
+            <div class="slide-dots"></div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Allegro Details (Interactive HTML Slideshow) -->
+    <div id="modal-allegro" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content slideshow-modal-content">
+            <div class="slideshow-container">
+                <div class="slides-track">
+                    <!-- Slide 1: Title Cover -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-body" style="text-align: center; align-items: center; justify-content: center;">
+                            <h4 style="color: var(--allegro-orange); font-weight: 700; letter-spacing: 0.15em;">ALLEGRO CASE STUDY</h4>
+                            <h2 style="font-size: 2.2rem; margin: 1rem 0; font-weight: 800; max-width: 650px;">Gift Discovery: Designing for the 'No-Idea' Shopper</h2>
+                            <p style="color: var(--text-secondary); max-width: 500px; font-size: 0.95rem; line-height: 1.6;">Evaluating search guidance, layout inspiration, and checkout cross-selling loops in Poland's largest e-commerce marketplace.</p>
+                            <span style="font-size: 0.72rem; font-weight: 500; text-transform: uppercase; color: var(--text-secondary); margin-top: 1.5rem; letter-spacing: 0.05em; background-color: var(--image-bg); padding: 0.2rem 0.6rem; border-radius: 4px;">UAM Laboratorium Umysłu Rozszerzonego</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2: Executive Summary & User Journey -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>01 / Overview</h4>
+                            <h2>Executive Summary & User Journey</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <div class="journey-timeline">
+                                <div class="journey-step active">
+                                    <div class="step-circle">1</div>
+                                    <div class="step-title">Initial Search</div>
+                                    <div class="step-desc">Entering a general search query</div>
+                                </div>
+                                <div class="journey-step friction">
+                                    <div class="step-circle">2</div>
+                                    <div class="step-title">Redirect Mismatch</div>
+                                    <div class="step-desc">Getting lost in subcategories</div>
+                                </div>
+                                <div class="journey-step friction">
+                                    <div class="step-circle">3</div>
+                                    <div class="step-title">Hidden Inspiration</div>
+                                    <div class="step-desc">Invisible inspiration hub</div>
+                                </div>
+                                <div class="journey-step active">
+                                    <div class="step-circle">4</div>
+                                    <div class="step-title">Checkout Cart</div>
+                                    <div class="step-desc">Selecting items within budget (+30%)</div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                                <h4 style="color: var(--allegro-orange); font-size: 1.05rem; margin: 0 0 0.5rem 0; font-weight: 700; letter-spacing: 0.02em;">Research Objective</h4>
+                                <p style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6; max-width: 600px; margin: 0; font-weight: 300;">Evaluate search relevance, navigation structures, and recommended accessories when a user is shopping for a gift with no prior idea.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Study Setup -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>02 / Methodology</h4>
+                            <h2>User Profiles & Testing Setup</h2>
+                        </div>
+                        <div class="html-slide-body html-slide-grid-2">
+                            <div style="display: flex; flex-direction: column; justify-content: center; gap: 0.8rem;">
+                                <h3 style="margin: 0; font-size: 1rem; font-weight: 700; color: var(--text-primary);">Research Parameters</h3>
+                                <ul style="padding-left: 1.2rem; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+                                    <li><strong>Sample size:</strong> N = 5 Digital Natives (ages 21 - 27)</li>
+                                    <li><strong>Duration:</strong> Average session of 40 minutes</li>
+                                    <li><strong>Collaborators:</strong> Allegro UX Research Team & UAM coordinators</li>
+                                </ul>
+                            </div>
+                            <div class="html-slide-card" style="background-color: var(--image-bg); border-color: transparent;">
+                                <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 700;">Task Scenarios</h3>
+                                <p style="margin-bottom: 0.6rem; font-size: 0.76rem; line-height: 1.4; color: var(--text-secondary);"><strong>Task 1 (Inspiration):</strong> Find a gift for a family member starting with no specific product in mind.</p>
+                                <p style="font-size: 0.76rem; margin: 0; line-height: 1.4; color: var(--text-secondary);"><strong>Task 2 (Cross-selling):</strong> In checkout cart, add a accessory item within a 30% price limit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Severity Matrix -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>03 / Insights</h4>
+                            <h2>Severity Matrix of Discovered Issues</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">We identified <strong>16 usability problems</strong> during testing. We categorized them using the following severity distribution:</p>
+                            
+                            <div class="severity-matrix-container">
+                                <div class="severity-row">
+                                    <div class="severity-meta">
+                                        <h4>Critical Severity</h4>
+                                    </div>
+                                    <div class="severity-bar-container">
+                                        <div class="severity-bar-bg">
+                                            <div class="severity-bar-fill critical"></div>
+                                        </div>
+                                        <span class="severity-count">5 Issues</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="severity-row">
+                                    <div class="severity-meta">
+                                        <h4>High Severity</h4>
+                                    </div>
+                                    <div class="severity-bar-container">
+                                        <div class="severity-bar-bg">
+                                            <div class="severity-bar-fill high"></div>
+                                        </div>
+                                        <span class="severity-count">7 Issues</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="severity-row">
+                                    <div class="severity-meta">
+                                        <h4>Medium/Low</h4>
+                                    </div>
+                                    <div class="severity-bar-container">
+                                        <div class="severity-bar-bg">
+                                            <div class="severity-bar-fill medium"></div>
+                                        </div>
+                                        <span class="severity-count">4 Issues</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: Finding 1 -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>04 / Usability Finding 1</h4>
+                            <h2>The Hidden Inspiration Page</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <span class="severity-badge high" style="margin-bottom: 0.6rem;">High Severity</span>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-card before">
+                                    <span class="comparison-tag">The Friction</span>
+                                    <h4>Invisible Inspiration Hub</h4>
+                                    <p>"Allegro has a very cool inspiration page. It's a shame that nobody actually knows it exists." Users searched external sites for ideas first.</p>
+                                </div>
+                                <div class="comparison-card after">
+                                    <span class="comparison-tag">The Redesign</span>
+                                    <h4>Direct Homepage Banner</h4>
+                                    <p>Integrate high-contrast entry-points for "Allegro Inspiruje" during gift seasons. Place pathways directly inside search auto-suggest fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6: Interactive Prototype Solution -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>05 / Prototype</h4>
+                            <h2>Figma Interactive Redesign Solution</h2>
+                        </div>
+                        <div class="html-slide-body html-slide-grid-2" style="align-items: center;">
+                            <div class="laptop-mockup">
+                                <div class="laptop-screen">
+                                    <video controls playsinline preload="auto" muted>
+                                        <source src="allegro_prototype.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="laptop-base"></div>
+                            </div>
+                            <div class="html-slide-card" style="border-color: transparent; background: transparent; padding: 0 0 0 0.5rem;">
+                                <h3 style="color: var(--allegro-orange); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">Interactive Showcase</h3>
+                                <p style="margin-bottom: 0.8rem; font-size: 0.8rem; line-height: 1.45;">Redesigned banners and search autocomplete pathways to bring the Inspiration Hub directly into the user's flow.</p>
+                                <p style="font-size: 0.72rem; color: var(--text-secondary); margin: 0; line-height: 1.4;"><strong>Key Outcome:</strong> Retains search traffic and converts lost "no-idea" shoppers into active marketplace customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7: Finding 2 -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>06 / Usability Finding 2</h4>
+                            <h2>Category Misdirection</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <span class="severity-badge critical" style="margin-bottom: 0.6rem;">Critical Severity</span>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-card before">
+                                    <span class="comparison-tag">The Friction</span>
+                                    <h4>Forced Non-Purchasing Blogs</h4>
+                                    <p>"I clicked to buy handmade products, but all I got was DIY tutorials telling me how to make them myself." Users felt trapped and irritated.</p>
+                                </div>
+                                <div class="comparison-card after">
+                                    <span class="comparison-tag">The Redesign</span>
+                                    <h4>Split Results UI</h4>
+                                    <p>Establish a dual layout: present product purchases directly in the main feed, and house DIY articles in a distinct side tab.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8: Finding 3 -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>07 / Usability Finding 3</h4>
+                            <h2>Forced Autocomplete Redirection</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <span class="severity-badge critical" style="margin-bottom: 0.6rem;">Critical Severity</span>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-card before">
+                                    <span class="comparison-tag">The Friction</span>
+                                    <h4>Over-Specific Autoredirection</h4>
+                                    <p>"I type 'Tourist' and Allegro redirects me to backpacks before I can even see search options." Restricts exploration for gifts.</p>
+                                </div>
+                                <div class="comparison-card after">
+                                    <span class="comparison-tag">The Redesign</span>
+                                    <h4>Exploratory Autocomplete</h4>
+                                    <p>Show multiple matching subcategory paths in the suggestions dropdown, allowing users to choose their own destination.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 9: Finding 4 -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>08 / Usability Finding 4</h4>
+                            <h2>Storefront Lock Confusion</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <span class="severity-badge high" style="margin-bottom: 0.6rem;">High Severity</span>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-card before">
+                                    <span class="comparison-tag">The Friction</span>
+                                    <h4>Invisible Seller Jail</h4>
+                                    <p>"I searched for bookmark holders, and it said no match. Only later did I realize I was locked inside one specific seller's store."</p>
+                                </div>
+                                <div class="comparison-card after">
+                                    <span class="comparison-tag">The Redesign</span>
+                                    <h4>Global Escape Button</h4>
+                                    <p>Provide a clear alert stating: "No match found in *this store*. Search across all of Allegro?" with a prominent escape button.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 10: Finding 5 -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>09 / Usability Finding 5</h4>
+                            <h2>Misleading 'Supercena' Tag</h2>
+                        </div>
+                        <div class="html-slide-body">
+                            <span class="severity-badge medium" style="margin-bottom: 0.6rem;">Medium Severity</span>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-card before">
+                                    <span class="comparison-tag">The Friction</span>
+                                    <h4>Hidden Cost Disappointment</h4>
+                                    <p>"It says 'Supercena' (Super Price) which sounds great, but with delivery it's more expensive than regular items. I feel tricked."</p>
+                                </div>
+                                <div class="comparison-card after">
+                                    <span class="comparison-tag">The Redesign</span>
+                                    <h4>Total Price Transparency</h4>
+                                    <p>Display the estimated shipping fee directly below the promotional tag to align user expectations and build brand trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 11: Takeaways -->
+                    <div class="slide html-slide">
+                        <div class="html-slide-header">
+                            <h4>10 / Takeaways</h4>
+                            <h2>Participant Feedback Synthesis</h2>
+                        </div>
+                        <div class="html-slide-body html-slide-grid-2">
+                            <div class="html-slide-card" style="border-left: 4px solid var(--color-success);">
+                                <h3 style="color: var(--color-success); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">User Praise</h3>
+                                <p style="margin-bottom: 0.4rem; font-size: 0.78rem; line-height: 1.4; color: var(--text-secondary);">• Highly intuitive main shopping cart controls.</p>
+                                <p style="margin-bottom: 0.4rem; font-size: 0.78rem; line-height: 1.4; color: var(--text-secondary);">• Fast, responsive checkout pipeline speeds.</p>
+                                <p style="font-size: 0.78rem; margin: 0; line-height: 1.4; color: var(--text-secondary);">• Excellent review section for quality reassurance.</p>
+                            </div>
+                            <div class="html-slide-card" style="border-left: 4px solid var(--color-error);">
+                                <h3 style="color: var(--color-error); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">User Criticisms</h3>
+                                <p style="margin-bottom: 0.4rem; font-size: 0.78rem; line-height: 1.4; color: var(--text-secondary);">• High cognitive load due to banner overload.</p>
+                                <p style="margin-bottom: 0.4rem; font-size: 0.78rem; line-height: 1.4; color: var(--text-secondary);">• Non-intuitive category naming structures.</p>
+                                <p style="font-size: 0.78rem; margin: 0; line-height: 1.4; color: var(--text-secondary);">• Ineffective accessory matches in shopping cart.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="slide-nav prev-btn">&larr;</button>
+                <button class="slide-nav next-btn">&rarr;</button>
+            </div>
+            <div class="slide-dots"></div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Eye-Tracking Details (Interactive Slideshow) -->
+    <div id="modal-eyetracking" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content slideshow-modal-content">
+            <div class="slideshow-container">
+                <div class="slides-track">
+                    <div class="slide"><img src="eyetracking_slides/2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="eyetracking_slides/3.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="eyetracking_slides/4.jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="eyetracking_slides/5.jpg" alt="Slide 5"></div>
+                    <div class="slide"><img src="eyetracking_slides/6.jpg" alt="Slide 6"></div>
+                    <div class="slide"><img src="eyetracking_slides/7.jpg" alt="Slide 7"></div>
+                    <div class="slide"><img src="eyetracking_slides/8.jpg" alt="Slide 8"></div>
+                    <div class="slide"><img src="eyetracking_slides/9.jpg" alt="Slide 9"></div>
+                    <div class="slide"><img src="eyetracking_slides/10.jpg" alt="Slide 10"></div>
+                    <div class="slide"><img src="eyetracking_slides/11.jpg" alt="Slide 11"></div>
+                    <div class="slide"><img src="eyetracking_slides/12.jpg" alt="Slide 12"></div>
+                    <div class="slide"><img src="eyetracking_slides/13.jpg" alt="Slide 13"></div>
+                    <div class="slide"><img src="eyetracking_slides/14.jpg" alt="Slide 14"></div>
+                    <div class="slide"><img src="eyetracking_slides/15.jpg" alt="Slide 15"></div>
+                    <div class="slide"><img src="eyetracking_slides/16.jpg" alt="Slide 16"></div>
+                    <div class="slide"><img src="eyetracking_slides/17.jpg" alt="Slide 17"></div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="slide-nav prev-btn">&larr;</button>
+                <button class="slide-nav next-btn">&rarr;</button>
+            </div>
+            <div class="slide-dots"></div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Paintings Gallery Details (Interactive Slideshow) -->
+    <div id="modal-paintings" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content slideshow-modal-content">
+            <div class="slideshow-container">
+                <div class="slides-track">
+                    <div class="slide"><img src="painting1.jpg" alt="Painting 1"></div>
+                    <div class="slide"><img src="painting2.jpg" alt="Painting 2"></div>
+                    <div class="slide"><img src="painting3.jpg" alt="Painting 3"></div>
+                    <div class="slide"><img src="painting4.jpg" alt="Painting 4"></div>
+                    <div class="slide"><img src="painting5.jpg" alt="Painting 5"></div>
+                    <div class="slide"><img src="painting6.jpg" alt="Painting 6"></div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="slide-nav prev-btn">&larr;</button>
+                <button class="slide-nav next-btn">&rarr;</button>
+            </div>
+            <div class="slide-dots"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
